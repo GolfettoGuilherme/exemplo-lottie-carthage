@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,24 @@
 		0E1414082696A776001A15DB /* Exemplo_Lottie_Carthage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E1414062696A776001A15DB /* Exemplo_Lottie_Carthage.xcdatamodeld */; };
 		0E14140A2696A77B001A15DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1414092696A77B001A15DB /* Assets.xcassets */; };
 		0E14140D2696A77B001A15DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E14140B2696A77B001A15DB /* LaunchScreen.storyboard */; };
+		0E1414152696ACC0001A15DB /* lottieexeplo.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E1414142696ACC0001A15DB /* lottieexeplo.json */; };
+		0E9C552A2696B6EC00E8D757 /* Lottie.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9C55292696B6EC00E8D757 /* Lottie.xcframework */; };
+		0E9C552B2696B6EC00E8D757 /* Lottie.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9C55292696B6EC00E8D757 /* Lottie.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E9C552C2696B6EC00E8D757 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0E9C552B2696B6EC00E8D757 /* Lottie.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E1413FA2696A776001A15DB /* Exemplo Lottie Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exemplo Lottie Carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +43,8 @@
 		0E1414092696A77B001A15DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E14140C2696A77B001A15DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E14140E2696A77B001A15DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E1414142696ACC0001A15DB /* lottieexeplo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottieexeplo.json; sourceTree = "<group>"; };
+		0E9C55292696B6EC00E8D757 /* Lottie.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Lottie.xcframework; path = Carthage/Build/Lottie.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E9C552A2696B6EC00E8D757 /* Lottie.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +64,7 @@
 			children = (
 				0E1413FC2696A776001A15DB /* Exemplo Lottie Carthage */,
 				0E1413FB2696A776001A15DB /* Products */,
+				0E9C55242696B12100E8D757 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +87,17 @@
 				0E14140B2696A77B001A15DB /* LaunchScreen.storyboard */,
 				0E14140E2696A77B001A15DB /* Info.plist */,
 				0E1414062696A776001A15DB /* Exemplo_Lottie_Carthage.xcdatamodeld */,
+				0E1414142696ACC0001A15DB /* lottieexeplo.json */,
 			);
 			path = "Exemplo Lottie Carthage";
+			sourceTree = "<group>";
+		};
+		0E9C55242696B12100E8D757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E9C55292696B6EC00E8D757 /* Lottie.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +110,7 @@
 				0E1413F62696A776001A15DB /* Sources */,
 				0E1413F72696A776001A15DB /* Frameworks */,
 				0E1413F82696A776001A15DB /* Resources */,
+				0E9C552C2696B6EC00E8D757 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +161,7 @@
 				0E14140D2696A77B001A15DB /* LaunchScreen.storyboard in Resources */,
 				0E14140A2696A77B001A15DB /* Assets.xcassets in Resources */,
 				0E1414052696A776001A15DB /* Main.storyboard in Resources */,
+				0E1414152696ACC0001A15DB /* lottieexeplo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

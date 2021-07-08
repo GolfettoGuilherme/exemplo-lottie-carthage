@@ -6,14 +6,23 @@
 //
 
 import UIKit
+import Lottie
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var animationView: AnimationView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let subAnimationView = AnimationView(name: "lottieexeplo")
+        animationView.contentMode = .scaleAspectFit
+        animationView.addSubview(subAnimationView)
+        subAnimationView.frame = animationView.bounds
+        subAnimationView.play()
+        subAnimationView.loopMode = .loop
     }
-
-
+    
+    
 }
 
